@@ -9,4 +9,4 @@ Welcome to my **LeetCode Solutions** repository! 🚀 This repository contains m
 
 ## Contact
 
-🔗 Connect with me on **[LinkedIn](www.linkedin.com/in/yuval-kogan)**
+🔗 Connect with me on **[LinkedIn](https://www.linkedin.com/in/yuval-kogan)**
