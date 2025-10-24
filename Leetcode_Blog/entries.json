@@ -1,7 +1,0 @@
-[
-  {
-    "id": 1,
-    "date": "26.3.2025",
-    "content": "Moore's Voting Algorithm\n\nOverview:\nMoore's Voting Algorithm is a method to find the majority element in an array (an element that appears more than n/2 times). It works in O(n) time and O(1) space.\n\nAlgorithm Steps:\n1. **Find Candidate**: Iterate through the array, updating a candidate and a count variable.\n2. **Verify Candidate**: Check if the candidate occurs more than n/2 times.\n\nImplementation:\n\nfrom typing import List\n\ndef find_majority_element(nums: List[int]) -> int:\n    \"\"\"\n    Finds the majority element using Moore's Voting Algorithm.\n    \n    :param nums: List of integers\n    :return: Majority element if exists, else -1\n    \"\"\"\n    candidate, count = None, 0\n    for num in nums:\n        if count == 0:\n            candidate = num\n        count += (1 if num == candidate else -1)\n    return candidate if nums.count(candidate) > len(nums) // 2 else -1\n\nKey Takeaways:\n- O(n) time complexity.\n- O(1) space complexity.\n- Only works if a majority element exists.\n- Useful in scenarios where memory efficiency is crucial.\n\n"
-  }
-]
